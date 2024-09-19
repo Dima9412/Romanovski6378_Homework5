@@ -16,14 +16,14 @@ public class Controller {
     }
 
     public StudyGroup createStudyGroup(Teacher teacher, List<Student> students) {
-        // Log the creation process
+        
         System.out.println("Creating study group with teacher ID: " + teacher.getId());
 
         for (Student student : students) {
             System.out.println("Student ID: " + student.getId());
         }
 
-        // Create the study group through the service
+        
         return studyGroupService.createStudyGroup(teacher, students);
     }
 }
